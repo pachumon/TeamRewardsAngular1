@@ -1,0 +1,63 @@
+﻿<div class="modal fade in" id="redeemModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title text-info" id="myModalLabel">Redeem Kudos</h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <fieldset>                        
+                        <div class="form-group">
+                            <label for="nameFrom" class="col-lg-2 control-label">By :</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" id="nameFrom">
+                                    <option>--Select--</option>
+                                    <option>Jason</option>
+                                    <option>James</option>
+                                    <option>Eric</option>                                   
+                                    <option>Hilary</option>
+                                    <option>Sabuj</option>
+                                    <option>Ryon</option>
+                                    <option>Charles</option>
+                                    <option>Deepa</option>
+                                    <option>Jake</option>
+                                    <option>Mathews</option>
+                                    <option>Khalid</option>
+                                    <option>Karthik</option>
+                                    <option>Prasanth</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" class="col-lg-2 control-label">Comment :</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="3" maxlength="100" id="comment" placeholder="comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Kudos" class="col-lg-2 control-label">Kudos :</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" id="Kudos">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/app/KudosModalContoller.js"></script>
+

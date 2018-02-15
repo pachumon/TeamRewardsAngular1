@@ -1,0 +1,11 @@
+﻿@model List<Alfa.KudosApp.Common.Entities.Comments>
+@{
+    foreach (var comment in Model)
+    {
+        <blockquote>
+            <span class="label badge">@comment.ReceiverName</span> @comment.Comment
+            <small><cite title="Source Title" class="text-primary">@comment.ProviderName</cite></small>
+        </blockquote>
+    }
+}
+

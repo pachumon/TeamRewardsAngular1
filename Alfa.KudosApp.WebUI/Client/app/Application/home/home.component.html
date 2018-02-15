@@ -1,0 +1,26 @@
+﻿<div class="jumbotron">
+    <div class="container-fluid">      
+        <ul class="nav nav-pills bottom20">
+            <li ng-class="vm.active==1?'active':''" style="border:1px solid gray;border-radius:5px;"><a ng-click="vm.clicked(1)"><b>Rewards Summary</b></a></li>
+            <li ng-class="vm.active==2?'active':''" class="hidden-xs" style="border:1px solid gray;border-radius:5px;"><a ng-click="vm.clicked(2)"><b>Comments</b></a></li>
+            <li ng-class="vm.active==3?'active':''" class="hidden-xs" style="border:1px solid gray;border-radius:5px;"><a ng-click="vm.clicked(3)"><b>Reward Info</b></a></li>
+        </ul>
+        <uib-tabset active="vm.active">
+            <uib-tab index="1" heading="Static title">Static content 1</uib-tab>
+            <uib-tab index="2" heading="Static title">Static content 2</uib-tab>
+            <uib-tab index="3" heading="Static title">Static content 3</uib-tab>
+            <!--<div class="tab-pane  active in" id="summary">
+             @Html.Partial("~/Views/Home/_Summary.cshtml", Model.Users)
+         </div>
+         <div class="tab-pane fade in" id="comments">
+             @Html.Partial("~/Views/Home/_Comments.cshtml", Model.Comments)
+         </div>
+         <div class="tab-pane fade in" id="info">
+             @Html.Partial("~/Views/Home/_ExchangeRateInfo.cshtml")
+         </div>-->
+        </uib-tabset>
+
+        <!--@Html.Partial("~/Views/Home/_KudosModal.cshtml")
+    @Html.Partial("~/Views/Home/_RedeemModal.cshtml")-->
+    </div>
+</div>
